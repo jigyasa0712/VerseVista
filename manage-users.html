@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Mulitpage Blog Website</title>
+    <!--CUSTOM STYLESHEET-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--ICONSCOUT CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/unicons.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html" class="nav__logo">VerseVista</a>
+        <ul class="nav__items">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="signin.html">SignIn</a></li> -->
+          <li class="nav__profile">
+            <div class="avatar">
+              <img src="./images/avatar1.jpg" />
+            </div>
+            <ul>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="logout.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button id="open__nav-btn">
+          <div class="dashboard-buttons">
+            <img src="./Svg/hamburger icon.svg" />
+          </div>
+        </button>
+        <button id="close__nav-btn">
+          <div class="dashboard-buttons">
+            <img src="./Svg/cross.svg" />
+          </div>
+        </button>
+      </div>
+    </nav>
+    <!--=================================END OF NAV===================================-->
+
+    <section class="dashboard">
+      <div class="container dashboard__container">
+        <button id="show__sidebar-btn" class="sidebar__toggle">
+          <div class="right__toggle"><img src="./Svg/chevron-right.svg" /></div>
+        </button>
+        <button id="hide__sidebar-btn" class="sidebar__toggle">
+          <div class="left__toggle"><img src="./Svg/chevron-left.svg" /></div>
+        </button>
+        <aside>
+          <ul>
+            <li>
+              <a href="add-post.html">
+                <div class="pen-svg"><img src="./Svg/pencil-square.svg" /></div>
+                <h5>Add Post</h5></a
+              >
+              <a href="dashboard.html">
+                <div class="post-svg"><img src="./Svg/postcard.svg" /></div>
+                <h5>Manage Posts</h5></a
+              >
+              <a href="add-user.html">
+                <div class="person-svg"><img src="./Svg/person-add.svg" /></div>
+                <h5>Add User</h5></a
+              >
+              <a href="manage-users.html" class="active">
+                <div class="people-svg">
+                  <img src="./Svg/people-fill.svg" />
+                </div>
+                <h5>Manage Users</h5></a
+              >
+              <a href="add-category.html">
+                <div class="pencil-svg">
+                  <img src="./Svg/pencil-square.svg" />
+                </div>
+                <h5>Add Category</h5></a
+              >
+              <a href="manage-categories.html">
+                <div class="list-svg"><img src="./Svg/list-task.svg" /></div>
+                <h5>Manage Categories</h5></a
+              >
+            </li>
+          </ul>
+        </aside>
+        <main>
+          <h2>Manage Users</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Edit</th>
+                <th>Delete</th>
+                <th>Admin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ernest Achiever</td>
+                <td>achiever</td>
+                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td>
+                  <a href="delete-category.html" class="btn sm danger"
+                    >Delete</a
+                  >
+                </td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Daniel Vinyo</td>
+                <td>daniel</td>
+                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td>
+                  <a href="delete-category.html" class="btn sm danger"
+                    >Delete</a
+                  >
+                </td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>john</td>
+                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td>
+                  <a href="delete-category.html" class="btn sm danger"
+                    >Delete</a
+                  >
+                </td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </main>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__socials">
+        <a href="https://www.youtube.com/" target="_blank"
+          ><div class="svg-container"><img src="./Svg/yt.svg" /></div
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><div class="svg-container">
+            <img src="./Svg/Instagram.svg" width="10px" height="10px" /></div
+        ></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><div class="svg-container">
+            <img src="./Svg/linkedIn.svg" width="18px" height="18px" /></div
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><div class="svg-container">
+            <img src="./Svg/fb.svg" width="20px" height="20px" /></div
+        ></a>
+        <a href="https://twitter.com/home" target="_blank"
+          ><div class="svg-container"><img src="./Svg/twitter.svg" /></div
+        ></a>
+      </div>
+
+      <div class="container footer__container">
+        <article>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="">Art</a></li>
+            <li><a href="">Wild Life</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Science & Technology</a></li>
+            <li><a href="">Food</a></li>
+            <li><a href="">Music</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="">Online Support</a></li>
+            <li><a href="">Call Numbers</a></li>
+            <li><a href="">Emails</a></li>
+            <li><a href="">Social Support</a></li>
+            <li><a href="">Location</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Blog</h4>
+          <ul>
+            <li><a href="">Safety</a></li>
+            <li><a href="">Repair</a></li>
+            <li><a href="">Recent</a></li>
+            <li><a href="">Popular</a></li>
+            <li><a href="">Categories</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Permalinks</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </article>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright &copy; 2023KUEC2078</small>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
